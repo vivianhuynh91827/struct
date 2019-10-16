@@ -1,4 +1,4 @@
-struct player { int level;char name[];};
+struct player { int level;char* name;};
 
 void example();
 void toString();
