@@ -15,12 +15,14 @@ void example(){
   printf("Example player: {%d, %s}\n",ex.level,ex.name);
 }
 
-void toString(struct player person){
+void print(struct player person){
   printf("Player's Username: %s\n", person.name);
   printf("Player's Level: %d\n", person.level);
 }
 
-void set(struct player person, char* newName, int newLevel){
-  person.name = newName;
-  person.level = newLevel;
+void change(struct player *person, char* newName, int newLevel){
+  // struct player new;
+  person -> name = newName;
+  person -> level = newLevel;
+  // person = new;
 }

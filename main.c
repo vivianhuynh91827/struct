@@ -5,20 +5,26 @@
 int main(){
   printf("------------START------------\n");
   printf("\n");
+  printf("Examples:\n");
+  example();
+  example();
   example();
   printf("\n");
-  printf("Testing toString Function:\n");
+
+  printf("Testing print Function:\n");
   struct player test;
   test.name = "hello_world1234";
   test.level = 24;
-  toString(test);
+  struct player* test2 = &test;
+  print(test);
   printf("\n");
+
   printf("Testing set Function:\n");
   printf("Original player:\n");
-  toString(test);
+  print(test);
   printf("Changed player:\n");
-  set(test,"bigboi345",72);
-  toString(test);
+  change(test2,"bigboi345",72);
+  print(test);
   printf("\n");
   printf("---------TESTING-OVER---------\n");
 }
