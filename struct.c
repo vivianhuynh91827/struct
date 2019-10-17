@@ -12,7 +12,7 @@ void example(){
   struct player ex;
   ex.name = names[ind];
   ex.level = (rand() % 100) + 1;
-  printf("Example player: {%d, %s}\n",ex.level,ex.name);
+  printf("Player: {%d, %s}\n",ex.level,ex.name);
 }
 
 void print(struct player person){
