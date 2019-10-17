@@ -1,8 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "struct.h"
+#include <time.h>
 
 int main(){
+  srand(time(NULL));
   printf("------------START------------\n");
   printf("\n");
   printf("Examples:\n");
