@@ -7,7 +7,6 @@
 void example(){
   char* names[] = {"unicorn879","fireboy839",
                   "epic345","xxhelloxx", "santaclaus234","12bear34"};
-  srand(time(NULL));
   int ind = rand() % 6;
   struct player ex;
   ex.name = names[ind];
